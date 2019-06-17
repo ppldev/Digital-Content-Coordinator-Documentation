@@ -1,0 +1,83 @@
+<!-- For Prefix -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+
+<!-- For Row Template -->
+
+<mods:mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+
+      <mods:titleInfo>
+         <mods:title>{{jsonize(cells["Title / Name"].value)}}</mods:title>
+      </mods:titleInfo><!-- end mods:titleInfo -->
+
+      <mods:identifier type="local">{{jsonize(cells["Identifier"].value)}}</mods:identifier><!-- end mods:identifier -->
+
+      <mods:name>
+         <mods:namePart>{{jsonize(cells["Creator"].value)}}</mods:namePart>
+         <mods:role>
+            <mods:roleTerm type="text" authority="marcrelator">Creator</mods:roleTerm>
+         </mods:role>
+      </mods:name><!-- end mods:name - Creator -->
+
+      <mods:name>
+         <mods:namePart>{{jsonize(cells["Contributor"].value)}}</mods:namePart>
+         <mods:role>
+            <mods:roleTerm type="text" authority="marcrelator">Contributor</mods:roleTerm>
+         </mods:role>
+      </mods:name><!-- end mods:name - Contributor -->
+
+      <mods:abstract>{{jsonize(cells["Description"].value)}}</mods:abstract><!-- end mods:abstract -->
+
+      <mods:subject>
+         <mods:topic>{{jsonize(cells["Subject"].value)}}</mods:topic>
+         <mods:geographic>{{jsonize(cells["Subject Geographic"].value)}}
+           <mods:cartographics>
+             <mods:coordinates>{{jsonize(cells["geolocation:address"].value)}}</mods:coordinates>
+           </mods:cartographics>
+         </mods:geographic>
+      </mods:subject><!-- end mods:subject -->
+
+      <mods:genre>{{jsonize(cells["Genre"].value)}}</mods:genre><!-- end mods:genre -->
+
+      <mods:note>{{jsonize(cells["Note"].value)}}</mods:note>
+
+      <mods:originInfo>
+         <mods:publisher>{{jsonize(cells["Publisher"].value)}}</mods:publisher>
+         <mods:dateCreated>{{jsonize(cells["Date Original"].value)}}</mods:dateCreated>
+         <mods:dateOther type="qualifier">{{jsonize(cells["Date Qualifier"].value)}}</mods:dateOther>
+          <mods:dateCaptured>{{jsonize(cells["Date Created"].value)}}</mods:dateCaptured>
+      </mods:originInfo>
+
+      <mods:physicalDescription>
+         <mods:extent>{{jsonize(cells["Extent"].value)}}</mods:extent>
+         <mods:typeOfResource>{{jsonize(cells["Type"].value)}}</mods:typeOfResource>
+         <mods:internetMediaType>{{jsonize(cells["Format"].value)}}</mods:internetMediatType>
+         <mods:note type="locality" displayLabel="Locality">{{jsonize(cells["geolocation:address"].value)}}</mods:note>
+         <mods:note displayLabel="caption">{{jsonize(cells["Item Type Metadata:Caption"].value)}}</mods:note>
+         <mods:note displayLabel="transcription">{{jsonize(cells["Item Type Metadata:Transcription"].value)}}</mods:note>
+      </mods:physicalDescription>
+
+      <mods:language>
+         <mods:languageTerm type="text">{{jsonize(cells["Language"].value)}}</mods:languageTerm>
+      </mods:language>
+
+      <mods:location>
+        <mods:physicalLocation>{{jsonize(cells["Physical Location"].value)}}</mods:physicalLocation>
+      </mods:location><!-- end mods:location -->
+
+      <mods:relatedItem type="host">
+        <mods:titleInfo>
+          <mods:title>{{jsonize(cells["Collection"].value)}}</mods:title>
+        </mods:titleInfo>
+      </mods:relatedItem><!-- end mods:relatedItem -->
+
+      <mods:accessCondition>{{jsonize(cells["Rights"].value)}}</mods:accessCondition>
+
+   </mods:mods>
+
+<!-- Don't put anything in Row Separator -->
+
+<!-- For Suffix -->
+
+</modsCollection>

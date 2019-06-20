@@ -40,9 +40,47 @@ Pull in all upcoming events for the next 30 days if set to yes.
 
 If this attribute is set it overrides the all_events attribute and pulls in a curated feed of events set in the [Library Calendar Admin](https://www.provlib.org/wp-admin/admin.php?page=edit-feature-events).
 
+## Library Calendar
 ---
+Shortcode used to generate the full calendar display found on the [calendar page on ProvLib.org](https://www.provlib.org/calendar)
+
+![images/full_calendar.png](images/full_calendar.png)
+
+#### Codebase
+**PHP** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/inc/display/event_feed_full.php
+
+**SCSS/CSS** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/sass/partials/_fullCal.scss
+
+#### Shortcode
+```php
+[fullCalendar][/fullCalendar]
+```
+
+## Calendar List Display
+---
+Display a list of events from the LibCal API for the next 30 days. Event can be filtered using event categories.  The shortcode can be set to display events fron one specific category using a shortcode attribute.
+
+![images/calendar_list.png](images/calendar_list.png)
+
+#### Codebase
+**PHP** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/inc/display/event_feed_widget.php
+
+**SCSS/CSS** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/sass/partials/_eventFeed.scss
+
+#### Shortcode
+```php
+[Calendar][/Calendar]
+```
+
+#### Attributes
+You can alter the display of this row by using these attributes
+
+**tag="[category tag name]"** _~ defaults to All_
+
+Optional attribute that can be used to specifiy a LibCal category tag used to display only events in that category on page load. 
 
 ## Random PPL Alum Row
+---
 
 #### Codebase
 **PHP** :file_folder: /Users/dcc/Sites/ppldev/wp-content/themes/ppl/inc/ppl-alum.php
@@ -113,20 +151,4 @@ Displays a row that features an image of the library pre-renovation and a render
 #### Shortcode
 ```php
 [thinkAgainRow][/thinkAgainRow]
-```
-
-## Library Calendar
----
-Shortcode used to generate the full calendar display found on the [calendar page on ProvLib.org](https://www.provlib.org/calendar)
-
-![images/full_calendar.png](images/full_calendar.php)
-
-#### Codebase
-**PHP** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/inc/display/event_feed_full.php
-
-**SCSS/CSS** :file_folder: /Users/dcc/Sites/ppldev/wp-content/plugins/libcal-for-wordpress/sass/partials/_fullCal.scss
-
-#### Shortcode
-```php
-[fullCalendar][/fullCalendar]
 ```

@@ -11,7 +11,7 @@ Shortcodes being used on ProvLib.org.
 + [Random PPL Alum Row](#random-ppl-alum-row)
 + [2019 Exhbition Homepage Row](#2019-exhibition-homepage-row)
 + [Library Hours](#library-hours)
-+ [Capital Campaign Row](#capital-campaign-rown)
++ [Capital Campaign Row](#capital-campaign-row)
 
 ## Featured Events Row
 

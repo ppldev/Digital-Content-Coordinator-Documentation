@@ -5,13 +5,13 @@ Shortcodes being used on ProvLib.org.
 [Shortcode information from WordPress codex](https://codex.wordpress.org/Shortcode).
 
 ##### Table of Contents
-- [Featured Events Row](##Featured%20Events%20Row)
-- [Library Calendar](##Library%20Calendar)
-- [Calendar List Display](##Calendar%20List%20Display)
-- [Random PPL Alum Row](##Random%20PPL%20Alum%20Row)
-- [2019 Exhbition Homepage Row](##2019%20Exhibition%20Homepage%20Row)
-- [Library Hours](##Library%20Hours)
-- [Capital Campaign Row](##Capital%20Campaign%20Row)
++ [Featured Events Row](#featured-events-row)
++ [Library Calendar](#library-calendar)
++ [Calendar List Display](#calendar-list-display)
++ [Random PPL Alum Row](#random-ppl-alum-row)
++ [2019 Exhbition Homepage Row](#2019-exhibition-homepage-row)
++ [Library Hours](#library-hours)
++ [Capital Campaign Row](#capital-campaign-rown)
 
 ## Featured Events Row
 

@@ -9,7 +9,7 @@ Shortcodes being used on ProvLib.org.
 + [Library Calendar](#library-calendar)
 + [Calendar List Display](#calendar-list-display)
 + [Random PPL Alum Row](#random-ppl-alum-row)
-+ [2019 Exhbition Homepage Row](#2019-exhibition-homepage-row)
++ [2019 Exhibition Homepage Row](#2019-exhibition-homepage-row)
 + [Library Hours](#library-hours)
 + [Capital Campaign Row](#capital-campaign-row)
 

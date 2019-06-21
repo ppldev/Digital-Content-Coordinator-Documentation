@@ -5,8 +5,8 @@ An overview of the structure of the PPL site theme. Initially designed and devel
 ##### Quick Links
 + [Directory Structure](#directory-structure)
 + [Custom Post Types](#custom-post-types)
-+ [Template Parts](#template-parts)
-+ [Theme Functions](#custom-theme-functions)
++ [Advanced Custom Fields](#advanced-custom-fields)
++ [Custom Theme Options](#custom-theme-options)
 
 ## Directory Structure
 ---
@@ -80,3 +80,68 @@ An overview of the structure of the PPL site theme. Initially designed and devel
 + :page_facing_up: **header-passport.php** - Header used on the Passport page.
 + :page_facing_up: **header-teensquad.php** - Header used on the Teen Squad IMLS section.
 + :page_facing_up: **header.php** - Site header.
++ :page_facing_up: **home.php** - Template for the homepage.
++ :page_facing_up: **index.php** - Main template file.
++ :page_facing_up: **page-alum.php** - PPL Alum page template. The template for [this page](https://www.provlib.org/support-us/ppl-alum/).
++ :page_facing_up: **page-art-project.php** - Template file for the [this page](https://www.provlib.org/support-us/ppl-alum/). This is a custom post type called "Art Project". A section of the site that features art works made using materials from PPL's Special Collections.
++ :page_facing_up: **page-calendar.php** - Template file for the event calendar.
++ :page_facing_up: **page-floor-maps.php** - Template file that was used to display SVG floor maps of the library. This is not currently being used.
++ :page_facing_up: **page-passport.php** - Template for the Passport To Summer Learning page.
++ :page_facing_up: **page-ppl-teen-squad.php** - Template for the PPL Teen Squad IMLS Grant page. This file is
++ :page_facing_up: **page-support.php** - Template file for the [Support Us](https://www.provlib.org/support-us/) page.
++ :page_faceing_up: **page-teen-squad-overview.php* - Template file for the [Teen Squad IMLS Grant dashboard](https://www.provlib.org/teen-squad-overview/).
++ :page_faceing_up: **page-teen-squad-resources.php** - Template file for single [Teen Squad IMLS Grant program page](https://www.provlib.org/teen-squad/my-city-my-place/).
++ :page_facing_up: **page.php** - Generic page template file.
++ :page_facing_up: **readme.txt** - ReadMe file.
++ :page_facing_up: **rtl.css** - CSS file that provides support for languages that are written Right to Left(RTL). This is not currently being used.
++ :page_facing_up: - **screenshot.png** - A screenshot of the theme that is displayed in the WordPress admin.
++ :page_facing_up: **search.php** - Template for the search page.
++ :page_facing_up: **searchform.php** - The search form that appears in the top navigation. This was modified to allow toggling between site search and search of OSL eBooks and Catalog.
++ :page_facing_up: **sidebar.php** - Template for the sidebar.
++ :page_facing_up: **single-art-projects.php** - Template for [single art projects custom post type pages](https://www.provlib.org/art-projects/blimey-magazine/).
++ :page_facing_up: **single-databases.php** - Template for individual [databases custom post type pages](https://www.provlib.org/databases/american-ancestors/). The databases custom post type is mostly used to feed the [archive page](https://www.provlib.org/databases/). The single template file is mainly here so people don't wind up looking at a blank screen if they wind up on a single databases page...This could probably be spruced up.
++ :page_facing_up: **single-ppl-alum.php** Template file for individual PPL Alum pages.
++ :page_facing_up: **single-subject-guides.php** - Template for individual Subject Guides custom post type pages. Not currently being used.
++ :page_facing_up: **single-teen-squad.php** - Template for single Teen Squad IMLS grant pages.  
++ :page_facing_up: **single.php** - generic template for displaying single posts.
++ :page_facing_up: **style.css** - The main css file. This is minified file that is compiled from the SCSS files in the scss folder.
+
+## Custom Post Types
+---
+
+I've added a few custom post types to the theme to handle different types of content. Those CPTs are:
+* [Databases](https://www.provlib.org/wp-admin/edit.php?post_type=databases)
+  + A CPT that holds all of the online databases that PPL offers. This CPT feeds [this page](https://www.provlib.org/databases/).
+* [PPL Alum](https://www.provlib.org/wp-admin/edit.php?post_type=ppl-alum)
+  + A CPT that allows Tonia to add library patrons/program participants (aka PPL Alum) and feature their stories on the website. This feeds [this page](https://www.provlib.org/support-us/ppl-alum/). This CPT also feeds the "Random PPL Alum row" that is currently used on the home page as well as the PPL Alum section on the bottom of the [Support Us page](https://www.provlib.org/support-us/).
+* [Art Project](https://www.provlib.org/wp-admin/edit.php?post_type=art-projects)
+  + A CPT for featuring art works made using materials from PPL Special Collections. This CPT feeds this [archive page](https://www.provlib.org/research-collections/artists-at-ppl/online-gallery/).
+* [Teen Squad](https://www.provlib.org/wp-admin/edit.php?post_type=teen-squad)
+  + A CPT that features programs run by the PPL Teen Squad as part of their IMLS Grant. This CPT feeds [this page](https://www.provlib.org/teen-squad-overview/). The individual pages -[_Example_](https://www.provlib.org/teen-squad/rhode-coders-2-0/)- pull data from a Google Sheet. _(See the **Resources Produced...**) section. The code that pulls that data is found in the "Teen Squad" plugin directory. This data is pulled using the [Google Sheets](https://developers.google.com/sheets/api/) and [Google Drive](https://developers.google.com/drive/api/v3/about-sdk) APIs.
+
+## Advanced Custom Fields
+---
+
+This theme uses the Advanced Custom Fields plugin to create and pull data from various admin metaboxes. ACF is used heaving in the above Custom Post Types as well as in several admin options pages.  [Advanced Custom Fields Documentation](https://www.advancedcustomfields.com/resources/).
+
+## Custom Theme Options
+---
+
+There are a few custom admin options pages in the site admin.
+
+![images/custom_options_pages.png](images/custom_options_pages.png)
+
+![images/library_calendar_options_page.png](images/library_calendar_options_page.png)
+
+* [Think Again Row Settings](https://www.provlib.org/wp-admin/admin.php?page=think-again-row-settings) - ACF fields that provide the data for the ["Capital Campaign Row"](https://github.com/JohnProvidence/Digital-Content-Coordinator-Documentation/blob/master/ProvLib-Shortcodes.md#capital-campaign-row), aka "Think Again Row".
+
+* [Fundraising Message](https://www.provlib.org/wp-admin/admin.php?page=acf-options-fundraising-message) - ACF fields that provide data for the fundraising message seen on the top of the homepage.
+
+![images/fundraising_message.png](images/fundraising_message.png)
+
+* [Pop Up Message](https://www.provlib.org/wp-admin/admin.php?page=acf-options-pop-up-message) - ACF fields that provide data for a generic pop up message that is displayed on the homepage. This can be turned on or off. Initially this was built for PPL Give Day, though it is designed to be repurposed for other events/needs.
+
+
+* [Exhibition Homepage Row](https://www.provlib.org/wp-admin/admin.php?page=exhibition-homepage-row-settings) - ACF fields that provide data for the homepage row highlighting the 2019 Exhibition &amp; Program series [41.8219&deg; N, 71.4171&deg; W](https://github.com/JohnProvidence/Digital-Content-Coordinator-Documentation/blob/master/ProvLib-Shortcodes.md#2019-exhibition-homepage-row).
+
+* [Library Calendars](https://www.provlib.org/wp-admin/admin.php?page=library-calendars) - Admin area for the LibCal for WordPress plugin. This admin page can be used to rebuild the calendar JSON data file as well as creating lists of curated events.

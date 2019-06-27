@@ -19,6 +19,7 @@ The following collections have been run through Data Accessioner and have techni
 * **038-03 - Laurence E. Tilley Photograph Collection**
 * **040-03 - Avery Lord Photograph Collection**
 * **074-02 - UPP Arts Collection**
+* **002-03-01_RI-Postcard-Collectoin** - This is on the desktop of the iMac in the DCC office. It needs to be moved to PPLBackup2418. I was not able to do that before I left...
 
 These collections are stored on internal server PPLBackup2418 in `Collections / Bagged Collections /`
 

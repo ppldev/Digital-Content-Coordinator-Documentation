@@ -134,7 +134,7 @@ Displays library hours set in the [WordPress PPL Admin Area](https://www.provlib
 ![images/library_hours.png](images/library_hours.png)
 
 #### Codebase
-**PHP** :file_folder:  /Users/dcc/Sites/ppldev/wp-content/themes/ppl/ppl-hours.php
+**PHP** :file_folder:  /Users/dcc/Sites/ppldev/wp-content/themes/ppl/inc/ppl-hours.php
 
 #### Shortcode
 

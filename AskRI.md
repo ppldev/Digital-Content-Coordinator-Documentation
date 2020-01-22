@@ -32,7 +32,7 @@ I won't break down all of the files in the root directory. Here are files that a
 * - **page-my-account.php** - The page that displays for users who are logged in with [AskRI.org accounts](https://www.askri.org/my-account/).
 * - **page-resource-finder.php** - The template for the [resource-finder](https://www.askri.org/resource-finder/). Not currently in use...
 * - **page-resource-list.php** - The template for [individual additional resource pages](https://www.askri.org/consumer-protection/)
-* **single-resources.php** - page for the display of each [single database resource](https://www.askri.org/resources/world-book/). Includes calls to templates for video-tutorials, widgets, and promo material if that resource has data for those templates.
+* - **single-resources.php** - page for the display of each [single database resource](https://www.askri.org/resources/world-book/). Includes calls to templates for video-tutorials, widgets, and promo material if that resource has data for those templates.
 
 ## User Accounts
 

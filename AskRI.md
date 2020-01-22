@@ -14,7 +14,7 @@ The AskRI theme is based off of the [_underscores starter theme](https://undersc
 
 **Directory Structure**
 
-* :open_file_folder: - **askri**
+* :open_file_folder: - **wp-content/themes/askri**
   - :open_file_folder: - **dist** - contains the minified css, font files, images and minified js files being called when the site loads. --
   - :open_file_folder: - **inc** - theme funtions called in the functions.php file. These files include the code for User Account registration, navigation modifications, and custom theme settings.
   - :open_file_folder: - **js** - javascript files for ajax functions, login functions, main js and navigation

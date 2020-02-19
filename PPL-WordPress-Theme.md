@@ -123,6 +123,21 @@ I've added a few custom post types to the theme to handle different types of con
 ---
 
 This theme uses the Advanced Custom Fields plugin to create and pull data from various admin metaboxes. ACF is used heaving in the above Custom Post Types as well as in several admin options pages.  [Advanced Custom Fields Documentation](https://www.advancedcustomfields.com/resources/).
+* Capital Campaign 
+* Databases
+* Exhibition Home Page Row
+* Featured Image Row
+* Featured Videos
+* Fundraising Message
+* Library Maps
+* Online Gallery - Art Projects
+* Passport to Summer Learning
+* Pop Up Message
+* PPL Alum page
+* Subject Guides
+* Support Us
+* Teen Squad IMLS Grant Outcomes
+* Think Again Homepage Row
 
 ## Custom Theme Options
 ---

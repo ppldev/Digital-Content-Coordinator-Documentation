@@ -118,26 +118,15 @@ I've added a few custom post types to the theme to handle different types of con
   + A CPT for featuring art works made using materials from PPL Special Collections. This CPT feeds this [archive page](https://www.provlib.org/research-collections/artists-at-ppl/online-gallery/).
 * [Teen Squad](https://www.provlib.org/wp-admin/edit.php?post_type=teen-squad)
   + A CPT that features programs run by the PPL Teen Squad as part of their IMLS Grant. This CPT feeds [this page](https://www.provlib.org/teen-squad-overview/). The individual pages -[_Example_](https://www.provlib.org/teen-squad/rhode-coders-2-0/)- pull data from a Google Sheet. _(See the **Resources Produced...**) section. The code that pulls that data is found in the "Teen Squad" plugin directory. This data is pulled using the [Google Sheets](https://developers.google.com/sheets/api/) and [Google Drive](https://developers.google.com/drive/api/v3/about-sdk) APIs.
+* [Collections] (https://www.provlib.org/wp-admin/edit.php?post_type=collections)
+  + A CPT for special collections to generate a list of collection guides and finding aids. 
+* [Subject Guides] (https://www.provlib.org/wp-admin/edit.php?post_type=subject-guides)
+  + A CPT for subject guides. Currently not in use.
 
 ## Advanced Custom Fields
 ---
 
 This theme uses the Advanced Custom Fields plugin to create and pull data from various admin metaboxes. ACF is used heaving in the above Custom Post Types as well as in several admin options pages.  [Advanced Custom Fields Documentation](https://www.advancedcustomfields.com/resources/).
-* Capital Campaign 
-* Databases
-* Exhibition Home Page Row
-* Featured Image Row
-* Featured Videos
-* Fundraising Message
-* Library Maps
-* Online Gallery - Art Projects
-* Passport to Summer Learning
-* Pop Up Message
-* PPL Alum page
-* Subject Guides
-* Support Us
-* Teen Squad IMLS Grant Outcomes
-* Think Again Homepage Row
 
 ## Custom Theme Options
 ---

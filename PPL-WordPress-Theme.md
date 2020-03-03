@@ -33,6 +33,7 @@ An overview of the structure of the PPL site theme. Initially designed and devel
     - :page_facing_up: **_alum.scss** - PPL Alum ppl_styles
     - :page_facing_up: **_calendar.scss** - Full Calendar style overrides. _General calendar styles are defined in the LibCal For WordPress plugin_.
     - :page_facing_up: **_cc.scss** - Captial Campaign page ppl_styles
+    - :page_facing_up: **_collections.scss** - Styles for Collection Guides page
     - :page_facing_up: **_events.scss** - Styles used for the Savor The Story section of the site.
     - :page_facing_up: **_exhibition2019.scss** - Styles used for the 2019 Exhibition series
     - :page_facing_up: **_exhibitions.scss** - Styles used for the Programs &amp; Exhibitions section of the site.
@@ -85,6 +86,7 @@ An overview of the structure of the PPL site theme. Initially designed and devel
 + :page_facing_up: **page-alum.php** - PPL Alum page template. The template for [this page](https://www.provlib.org/support-us/ppl-alum/).
 + :page_facing_up: **page-art-project.php** - Template file for the [this page](https://www.provlib.org/support-us/ppl-alum/). This is a custom post type called "Art Project". A section of the site that features art works made using materials from PPL's Special Collections.
 + :page_facing_up: **page-calendar.php** - Template file for the event calendar.
++ :page_facing_up: **page-collections.php** - Template file for the [Collection Guides page](https://www.provlib.org/research-collections/historical-collections/guides/).
 + :page_facing_up: **page-floor-maps.php** - Template file that was used to display SVG floor maps of the library. This is not currently being used.
 + :page_facing_up: **page-passport.php** - Template for the Passport To Summer Learning page.
 + :page_facing_up: **page-ppl-teen-squad.php** - Template for the PPL Teen Squad IMLS Grant page. This file is
@@ -110,6 +112,8 @@ An overview of the structure of the PPL site theme. Initially designed and devel
 ---
 
 I've added a few custom post types to the theme to handle different types of content. Those CPTs are:
+* [Collections](https://www.provlib.org/wp-admin/edit.php?post_type=collections)
+  + A CPT that lists the finding aids available for individual collections. This CPT feeds the [Collection Guides page] (https://www.provlib.org/research-collections/historical-collections/guides/).
 * [Databases](https://www.provlib.org/wp-admin/edit.php?post_type=databases)
   + A CPT that holds all of the online databases that PPL offers. This CPT feeds [this page](https://www.provlib.org/databases/).
 * [PPL Alum](https://www.provlib.org/wp-admin/edit.php?post_type=ppl-alum)
